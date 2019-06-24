@@ -43,12 +43,11 @@
               while($row = mysqli_fetch_assoc($query)) {
                 Print '<tr>';
                   Print '<td>'.$row['username'].'</td>';
-                  Print '<td><a href="">edit</a></td>';
+                  Print '<td><a href="edit.php?id='.$row['id'].'">edit</a></td>';
                   Print '<td><a href="#" onclick="removeUser('.$row['id'].')">delete</a></td>';
                 Print '</tr>';
               }
             ?>
-            
           </table>
           <script>
             function removeUser(id)

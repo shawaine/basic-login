@@ -15,8 +15,8 @@
         <input class="btn" type="submit" value="Go to Home" />
       </form>
       <form action="logout.php">
-          <input class="btn" type="submit" value="Logout" />
-        </form>
+        <input class="btn" type="submit" value="Logout" />
+      </form>
     </div>
   </body>
 </html>

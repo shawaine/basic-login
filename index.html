@@ -10,11 +10,57 @@
   <body>
     <header><h1>Basic PHP</h1></header>
     <div class="container">
-      <div class="form">
-        <form action="register.php" method="POST"></form>
+      <div class="box">
+        <form action="register.php" method="POST">
+          <h1>REGISTER</h1>
+          <h4>Username</h4>
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="username here"
+            maxlength="50"
+            required
+          />
+          <h4>Password</h4>
+          <input
+            class="input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password here"
+            maxlength="50"
+            required
+          />
+          <input class="btn" type="submit" value="Register" />
+        </form>
       </div>
-      <div class="form">
-        <form action="register.php" method="POST"></form>
+      <div class="box">
+        <form action="login.php" method="POST">
+          <h1>LOGIN</h1>
+          <h4>Username</h4>
+          <input
+            class="input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="username here"
+            maxlength="50"
+            required
+          />
+          <h4>Password</h4>
+          <input
+            class="input"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="password here"
+            maxlength="50"
+            required
+          />
+          <input class="btn" type="submit" value="Login" />
+        </form>
       </div>
     </div>
   </body>

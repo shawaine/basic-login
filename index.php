@@ -16,9 +16,9 @@
           <h4>Username</h4>
           <input
             class="input"
-            type="email"
-            name="email"
-            id="email"
+            type="text"
+            name="username"
+            id="username"
             placeholder="username here"
             maxlength="50"
             required
@@ -37,14 +37,14 @@
         </form>
       </div>
       <div class="box">
-        <form action="login.php" method="POST">
+        <form action="checklogin.php" method="POST">
           <h1>LOGIN</h1>
           <h4>Username</h4>
           <input
             class="input"
-            type="email"
-            name="email"
-            id="email"
+            type="text"
+            name="username"
+            id="username"
             placeholder="username here"
             maxlength="50"
             required

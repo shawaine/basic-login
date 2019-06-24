@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
@@ -16,10 +14,11 @@ header {
 }
 
 .container {
-  height: 90vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .box {
@@ -28,6 +27,7 @@ header {
   align-items: center;
   justify-content: center;
   flex: 1 425px;
+  border: 1px solid black;
 }
 
 .box form {
@@ -38,23 +38,26 @@ header {
 }
 
 .box h1 {
-  margin-bottom: 2vh;
+  margin-bottom: 3vh;
 }
 
 .box h4 {
-  margin-top: 2vh;
+  margin-top: 3vh;
 }
 
 .input {
   text-align: center;
+  border: 1px solid black;
+  padding: 2px;
 }
 
 .btn {
   height: 5vh;
   width: auto;
   border-radius: 8px;
-  margin-top: 2vh;
+  margin-top: 3vh;
   padding: 0 1vw 0 1vw;
   text-transform: uppercase;
   cursor: pointer;
+  border: 1px solid black;
 }

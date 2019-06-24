@@ -8,6 +8,7 @@
 
 header {
   height: 10vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,12 +18,16 @@ header {
   height: 85vh;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
 }
 
+.index {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .box {
-  height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,9 +60,22 @@ header {
   height: 5vh;
   width: auto;
   border-radius: 8px;
-  margin-top: 3vh;
+  margin: 3vh 0 3vh 0;
   padding: 0 1vw 0 1vw;
   text-transform: uppercase;
   cursor: pointer;
   border: 1px solid black;
+}
+
+.user-list table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.user-list td,
+.user-list th {
+  border: 1px solid #afafaf;
+  background: rgb(241, 241, 241);
+  text-align: left;
+  padding: 8px;
 }

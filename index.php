@@ -9,7 +9,7 @@
   </head>
   <body>
     <header><h1>Basic PHP</h1></header>
-    <div class="container">
+    <div class="container index">
       <div class="box">
         <form action="register.php" method="POST">
           <h1>REGISTER</h1>

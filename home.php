@@ -29,6 +29,38 @@
         <form action="logout.php">
           <input class="btn" type="submit" value="Logout" />
         </form>
+        <div class="user-list">
+          <table>
+            <tr>
+              <th>Username</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+            <?php 
+              $conn = mysqli_connect("localhost","root","") or die(mysqli_error());
+              mysqli_select_db($conn, "basics") or die("Cannot connect to database");
+              $query = mysqli_query($conn, "SELECT * FROM users WHERE username <> 'admin' AND username <> '$user'");
+              while($row = mysqli_fetch_assoc($query)) {
+                Print '<tr>';
+                  Print '<td>'.$row['username'].'</td>';
+                  Print '<td><a href="">edit</a></td>';
+                  Print '<td><a href="#" onclick="removeUser('.$row['id'].')">delete</a></td>';
+                Print '</tr>';
+              }
+            ?>
+            
+          </table>
+          <script>
+            function removeUser(id)
+            {
+            var r=confirm("Are you sure you want to delete this record?");
+            if (r==true)
+              {
+                window.location.assign("delete.php?id=" + id);
+              }
+            }
+          </script>
+        </div>
       </div>
     </div>
   </body>

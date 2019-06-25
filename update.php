@@ -9,8 +9,8 @@
     // Print '<script>alert("Successfully Updated.");</script>'; 
     // Print '<script>window.location.assign("home.php");</script>';
 
-        $conn = mysqli_connect("localhost","root","") or die(mysqli_error());
-        mysqli_select_db($conn, "basics") or die("Cannot connect to database");
+    $conn = mysqli_connect("localhost","admin","admin") or die(mysqli_error());
+    mysqli_select_db($conn, "id10057542_basics") or die("Cannot connect to database");
         $username =  mysqli_real_escape_string($conn, $_POST['username']);
         $password = password_hash( mysqli_real_escape_string($conn, $_POST['password']), PASSWORD_DEFAULT);
         $isDuplicate = true;

@@ -37,8 +37,8 @@
               <th>Delete</th>
             </tr>
             <?php 
-              $conn = mysqli_connect("localhost","root","") or die(mysqli_error());
-              mysqli_select_db($conn, "basics") or die("Cannot connect to database");
+             $conn = mysqli_connect("localhost","admin","admin") or die(mysqli_error());
+             mysqli_select_db($conn, "id10057542_basics") or die("Cannot connect to database");
               $query = mysqli_query($conn, "SELECT * FROM users WHERE username <> 'admin' AND username <> '$user'");
               while($row = mysqli_fetch_assoc($query)) {
                 Print '<tr>';

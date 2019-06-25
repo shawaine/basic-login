@@ -18,8 +18,8 @@ $user = $_SESSION['user'];
 $id = $_GET['id'];
 $_SESSION['id'] = $id;
 
-$conn = mysqli_connect("localhost","root","") or die(mysqli_error());
-mysqli_select_db($conn, "basics") or die("Cannot connect to database");
+$conn = mysqli_connect("localhost","admin","admin") or die(mysqli_error());
+mysqli_select_db($conn, "id10057542_basics") or die("Cannot connect to database");
 $query = mysqli_query($conn, "SELECT * FROM users WHERE id ='$id'");
 $numrow = mysqli_num_rows($query);
 if($numrow <= 0)

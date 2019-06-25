@@ -14,12 +14,12 @@ if($rownum > 0){
         }
         else{
             Print '<script>alert("Incorrect Username or Password")</script>';
-            Print '<script>window.location.assign("index.php");</script>';
+            Print '<script>window.location.assign("index.html");</script>';
         }
     }
 }
 else{
     Print '<script>alert("Incorrect Username or Password")</script>';
-    Print '<script>window.location.assign("index.php");</script>';
+    Print '<script>window.location.assign("index.html");</script>';
 }
 ?>

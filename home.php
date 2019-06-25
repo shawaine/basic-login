@@ -12,7 +12,7 @@
 	if($_SESSION['user']){ //checks if user is logged in
 	}
 	else{
-		header("location:index.php"); // redirects if user is not logged in
+		header("location:index.html"); // redirects if user is not logged in
 	}
 	$user = $_SESSION['user']; //assigns user value
 	?>

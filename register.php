@@ -13,7 +13,7 @@ while($row = mysqli_fetch_array($query))
     {
         $isDuplicate = false; 
         Print '<script>alert("Username is already taken!");</script>'; 
-        Print '<script>window.location.assign("index.php");</script>'; 
+        Print '<script>window.location.assign("index.html");</script>'; 
     }
 }
 

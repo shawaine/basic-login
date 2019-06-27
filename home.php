@@ -8,13 +8,13 @@
     <title>Home</title>
   </head>
   <?php
-  session_start(); 
-  if(!isset($_SESSION['user'])){
-    header('location:index.html');
-  }
-  $user = $_SESSION['user']; 
-  
- 
+	session_start(); //starts the session
+	if($_SESSION['user']){ //checks if user is logged in
+	}
+	else{
+		header("location:index.html"); // redirects if user is not logged in
+	}
+	$user = $_SESSION['user']; //assigns user value
 	?>
   <body>
     <div class="container">
@@ -37,8 +37,7 @@
               <th>Delete</th>
             </tr>
             <?php 
-             $conn = mysqli_connect("localhost","id10057542_admin","admin") or die(mysqli_error());
-             mysqli_select_db($conn, "id10057542_basics") or die("Cannot connect to database");
+              include 'db.php';
               $query = mysqli_query($conn, "SELECT * FROM users WHERE username <> 'admin' AND username <> '$user'");
               while($row = mysqli_fetch_assoc($query)) {
                 Print '<tr>';
